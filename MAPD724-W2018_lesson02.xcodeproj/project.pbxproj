@@ -15,6 +15,14 @@
 		F54391F4201FEC190013DF54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54391F2201FEC190013DF54 /* Main.storyboard */; };
 		F54391F6201FEC190013DF54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54391F5201FEC190013DF54 /* Assets.xcassets */; };
 		F54391F9201FEC190013DF54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54391F7201FEC190013DF54 /* LaunchScreen.storyboard */; };
+		F543920A201FED930013DF54 /* engine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5439207201FED930013DF54 /* engine.mp3 */; };
+		F543920B201FED930013DF54 /* yay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5439208201FED930013DF54 /* yay.mp3 */; };
+		F543920C201FED930013DF54 /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5439209201FED930013DF54 /* thunder.mp3 */; };
+		F543920D201FEDA00013DF54 /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5439206201FED800013DF54 /* Dock51.ttf */; };
+		F5439215202005390013DF54 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5439214202005390013DF54 /* GameObject.swift */; };
+		F5439217202009080013DF54 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5439216202009080013DF54 /* GameProtocol.swift */; };
+		F54392192020098C0013DF54 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54392182020098C0013DF54 /* Plane.swift */; };
+		F543921B202013070013DF54 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F543921A202013070013DF54 /* Ocean.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		F54391F5201FEC190013DF54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F54391F8201FEC190013DF54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F54391FA201FEC190013DF54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5439206201FED800013DF54 /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dock51.ttf; path = ../../Assets/fonts/Dock51.ttf; sourceTree = "<group>"; };
+		F5439207201FED930013DF54 /* engine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = engine.mp3; path = ../../Assets/audio/engine.mp3; sourceTree = "<group>"; };
+		F5439208201FED930013DF54 /* yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yay.mp3; path = ../../Assets/audio/yay.mp3; sourceTree = "<group>"; };
+		F5439209201FED930013DF54 /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = thunder.mp3; path = ../../Assets/audio/thunder.mp3; sourceTree = "<group>"; };
+		F5439214202005390013DF54 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		F5439216202009080013DF54 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		F54392182020098C0013DF54 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		F543921A202013070013DF54 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +76,41 @@
 		F54391E7201FEC190013DF54 /* MAPD724-W2018_lesson02 */ = {
 			isa = PBXGroup;
 			children = (
+				F5439213202004EF0013DF54 /* Objects */,
+				F5439210201FF8B90013DF54 /* Scenes */,
 				F54391E8201FEC190013DF54 /* AppDelegate.swift */,
-				F54391EA201FEC190013DF54 /* GameScene.sks */,
 				F54391EC201FEC190013DF54 /* Actions.sks */,
-				F54391EE201FEC190013DF54 /* GameScene.swift */,
 				F54391F0201FEC190013DF54 /* GameViewController.swift */,
 				F54391F2201FEC190013DF54 /* Main.storyboard */,
 				F54391F5201FEC190013DF54 /* Assets.xcassets */,
 				F54391F7201FEC190013DF54 /* LaunchScreen.storyboard */,
+				F5439206201FED800013DF54 /* Dock51.ttf */,
+				F5439207201FED930013DF54 /* engine.mp3 */,
+				F5439209201FED930013DF54 /* thunder.mp3 */,
+				F5439208201FED930013DF54 /* yay.mp3 */,
 				F54391FA201FEC190013DF54 /* Info.plist */,
 			);
 			path = "MAPD724-W2018_lesson02";
+			sourceTree = "<group>";
+		};
+		F5439210201FF8B90013DF54 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F54391EA201FEC190013DF54 /* GameScene.sks */,
+				F54391EE201FEC190013DF54 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F5439213202004EF0013DF54 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F5439214202005390013DF54 /* GameObject.swift */,
+				F5439216202009080013DF54 /* GameProtocol.swift */,
+				F54392182020098C0013DF54 /* Plane.swift */,
+				F543921A202013070013DF54 /* Ocean.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +174,12 @@
 			files = (
 				F54391F4201FEC190013DF54 /* Main.storyboard in Resources */,
 				F54391EB201FEC190013DF54 /* GameScene.sks in Resources */,
+				F543920B201FED930013DF54 /* yay.mp3 in Resources */,
+				F543920D201FEDA00013DF54 /* Dock51.ttf in Resources */,
+				F543920C201FED930013DF54 /* thunder.mp3 in Resources */,
 				F54391F6201FEC190013DF54 /* Assets.xcassets in Resources */,
 				F54391F9201FEC190013DF54 /* LaunchScreen.storyboard in Resources */,
+				F543920A201FED930013DF54 /* engine.mp3 in Resources */,
 				F54391ED201FEC190013DF54 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,9 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F543921B202013070013DF54 /* Ocean.swift in Sources */,
 				F54391EF201FEC190013DF54 /* GameScene.swift in Sources */,
+				F5439217202009080013DF54 /* GameProtocol.swift in Sources */,
 				F54391F1201FEC190013DF54 /* GameViewController.swift in Sources */,
 				F54391E9201FEC190013DF54 /* AppDelegate.swift in Sources */,
+				F54392192020098C0013DF54 /* Plane.swift in Sources */,
+				F5439215202005390013DF54 /* GameObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
